@@ -11,4 +11,11 @@ public class CarService
         _carRepository = carRepository;
         _mapper = mapper;
     }
+    public async Task<CarsResponse> GetCarsById(CarsRequest request) {
+        var cars = await _carRepository.GetCarsByIdAsync(request.Id.ToList());
+        var mappedCars = _mapper.Map<List<CarStatus>>(cars);
+        var carsResponse = new CarsResponse();
+        carsResponse.Cars.AddRange(mappedCars);
+        return carsResponse;
+    }
 }

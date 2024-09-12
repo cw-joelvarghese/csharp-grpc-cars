@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "tM+PjFdncYmKxIMB/mKhBoU8m8OrL5DigKJhJWQpuFk=",
+  "Source": "csharp-grpc-cars",
+  "BasePath": "_content/csharp-grpc-cars",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

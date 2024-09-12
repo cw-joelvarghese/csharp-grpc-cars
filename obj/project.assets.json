@@ -18,19 +18,6 @@
           }
         }
       },
-      "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.1": {
-        "type": "package",
-        "dependencies": {
-          "AutoMapper": "[12.0.1]",
-          "Microsoft.Extensions.Options": "6.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
-        }
-      },
       "BouncyCastle.Cryptography/2.3.1": {
         "type": "package",
         "compile": {
@@ -783,20 +770,6 @@
         "icon.png",
         "lib/net6.0/AutoMapper.dll",
         "lib/net6.0/AutoMapper.xml"
-      ]
-    },
-    "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.1": {
-      "sha512": "+g/K+Vpe3gGMKGzjslMOdqNlkikScDjWfVvmWTayrDHaG/n2pPmFBMa+jKX1r/h6BDGFdkyRjAuhFE3ykW+r1g==",
-      "type": "package",
-      "path": "automapper.extensions.microsoft.dependencyinjection/12.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
-        "automapper.extensions.microsoft.dependencyinjection.nuspec",
-        "icon.png",
-        "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
       ]
     },
     "BouncyCastle.Cryptography/2.3.1": {
@@ -2353,26 +2326,25 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "AutoMapper >= 13.0.1",
-      "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
       "Dapper >= 2.1.35",
       "Grpc.AspNetCore >= 2.57.0",
       "MySql.Data >= 9.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\joel.v\\.nuget\\packages\\": {}
+    "/home/joel/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joel.v\\Desktop\\Code\\csharp-grpc-cars\\csharp-grpc-cars.csproj",
+      "projectUniqueName": "/home/joel/Code/csharp-grpc-cars/csharp-grpc-cars.csproj",
       "projectName": "csharp-grpc-cars",
-      "projectPath": "C:\\Users\\joel.v\\Desktop\\Code\\csharp-grpc-cars\\csharp-grpc-cars.csproj",
-      "packagesPath": "C:\\Users\\joel.v\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joel.v\\Desktop\\Code\\csharp-grpc-cars\\obj\\",
+      "projectPath": "/home/joel/Code/csharp-grpc-cars/csharp-grpc-cars.csproj",
+      "packagesPath": "/home/joel/.nuget/packages/",
+      "outputPath": "/home/joel/Code/csharp-grpc-cars/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\joel.v\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/joel/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -2390,11 +2362,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2404,10 +2371,6 @@
           "AutoMapper": {
             "target": "Package",
             "version": "[13.0.1, )"
-          },
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-            "target": "Package",
-            "version": "[12.0.1, )"
           },
           "Dapper": {
             "target": "Package",
@@ -2441,20 +2404,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: AutoMapper.Extensions.Microsoft.DependencyInjection 12.0.1 requires AutoMapper (= 12.0.1) but version AutoMapper 13.0.1 was resolved.",
-      "libraryId": "AutoMapper",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  }
 }

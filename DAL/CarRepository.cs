@@ -1,25 +1,21 @@
 using System.Data;
 using Dapper;
 using csharp_grpc_cars.Models;
-using MySql.Data.MySqlClient;
+using csharp_grpc_cars.Data;
 
 namespace csharp_grpc_cars.DAL;
 
 public class CarRepository
 {
-    private readonly string _connectionString;
-
-    public CarRepository(string connectionString)
+    private readonly IDbConnection _dbConnection;
+    public CarRepository(DatabaseConnection databaseConnection)
     {
-        _connectionString = connectionString;
+        _dbConnection = databaseConnection.CreateConnection();
     }
 
-    public async Task<CarResponseModel> GetPersonByIdAsync(int id)
-        {
-            using (IDbConnection dbConnection = new MySqlConnection(_connectionString))
-            {
-                string query = "SELECT Id, Name, Email FROM Persons WHERE Id = @Id";
-                return await dbConnection.QuerySingleOrDefaultAsync<CarResponseModel>(query, new { Id = id });
-            }
-        }
+    public async Task<IEnumerable<CarModel>> GetCarsByIdAsync(List<int> ids)
+    {
+        string query = "SELECT * FROM stock WHERE Id IN @Ids";
+        return await _dbConnection.QueryAsync<CarModel>(query, new { Ids = ids });
+    }
 }
