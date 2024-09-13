@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/joel/Code/csharp-grpc-cars/csharp-grpc-cars.csproj": {}
+    "c:\\Users\\joel.v\\Desktop\\Code\\csharp-grpc-cars\\csharp-grpc-cars.csproj": {}
   },
   "projects": {
-    "/home/joel/Code/csharp-grpc-cars/csharp-grpc-cars.csproj": {
+    "c:\\Users\\joel.v\\Desktop\\Code\\csharp-grpc-cars\\csharp-grpc-cars.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/joel/Code/csharp-grpc-cars/csharp-grpc-cars.csproj",
+        "projectUniqueName": "c:\\Users\\joel.v\\Desktop\\Code\\csharp-grpc-cars\\csharp-grpc-cars.csproj",
         "projectName": "csharp-grpc-cars",
-        "projectPath": "/home/joel/Code/csharp-grpc-cars/csharp-grpc-cars.csproj",
-        "packagesPath": "/home/joel/.nuget/packages/",
-        "outputPath": "/home/joel/Code/csharp-grpc-cars/obj/",
+        "projectPath": "c:\\Users\\joel.v\\Desktop\\Code\\csharp-grpc-cars\\csharp-grpc-cars.csproj",
+        "packagesPath": "C:\\Users\\joel.v\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\joel.v\\Desktop\\Code\\csharp-grpc-cars\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/joel/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\joel.v\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -74,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

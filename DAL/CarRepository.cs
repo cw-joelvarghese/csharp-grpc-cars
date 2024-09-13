@@ -15,7 +15,7 @@ public class CarRepository
 
     public async Task<IEnumerable<CarModel>> GetCarsByIdAsync(List<int> ids)
     {
-        string query = "SELECT * FROM stock WHERE Id IN @Ids";
+        string query = "SELECT * FROM stocks WHERE Id IN @Ids";
         return await _dbConnection.QueryAsync<CarModel>(query, new { Ids = ids });
     }
 }
